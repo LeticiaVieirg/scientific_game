@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Científico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧠 Quiz Científico</h1>
+            <p>Teste seus conhecimentos sobre ciências!</p>
+        </header>
+
+        <div id="start-screen" class="screen active">
+            <div class="start-content">
+                <h2>Bem-vindo ao Quiz!</h2>
+                <p>Responda às perguntas sobre ciências e veja quantos pontos você consegue!</p>
+                <button id="start-btn" class="btn">Começar Quiz</button>
+            </div>
+        </div>
+
+        <div id="game-screen" class="screen">
+            <div class="game-header">
+                <div class="score">Pontuação: <span id="score">0</span></div>
+                <div class="progress">Pergunta <span id="current-question">1</span>/<span id="total-questions">5</span></div>
+            </div>
+
+            <div class="question-container">
+                <h2 id="question-text"></h2>
+                <div id="options-container" class="options-container"></div>
+            </div>
+
+            <button id="next-btn" class="btn hidden">Próxima Pergunta</button>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <div class="result-content">
+                <h2>Quiz Concluído!</h2>
+                <div class="final-score">
+                    Sua pontuação final: <span id="final-score">0</span>
+                </div>
+                <div id="performance-message" class="performance-message"></div>
+                <button id="restart-btn" class="btn">Jogar Novamente</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
